@@ -223,7 +223,7 @@ tar -c${DEBUG}f $TDIR/data.tar *
 cd $pdir
 tar -C $pdir \
   --xform="s:^.:opt/$Package:" \
-  --exclude-backups --exclude-vcs \
+  --exclude-backups \
   --exclude=nodeb_templates \
   --exclude=*.deb  $nbNoassets \
   -r${DEBUG}f $TDIR/data.tar .
